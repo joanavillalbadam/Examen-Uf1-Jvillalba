@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alumnedam.examen_uf1_jvillalba.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce tu nombre"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+
+    <RadioGroup
+        android:id="@+id/grupobtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RadioButton
+        android:text="Division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox4"
+        android:checked="true"
+        android:layout_weight="0.08"
+        android:layout_above="@+id/checkBox3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <RadioButton
+        android:text="Restas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:checked="true"
+        android:layout_weight="0.08"
+        android:layout_above="@+id/checkBox3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <RadioButton
+        android:text="Sumas"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+            android:layout_above="@+id/checkBox2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+        <RadioButton
+            android:text="Multiplicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox3"
+            android:layout_weight="0.08"
+            android:layout_above="@+id/guardar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/grupobtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grupobtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp">
+        <RadioButton
+            android:text="10 operacions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox8"
+            android:layout_weight="0.08"
+            android:layout_above="@+id/guardar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <RadioButton
+            android:text="15 operacions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox10"
+            android:layout_weight="0.08"
+            android:layout_above="@+id/guardar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <RadioButton
+            android:text="20 operacions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox12"
+            android:layout_weight="0.08"
+            android:layout_above="@+id/guardar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        </RadioGroup>
+
+    <Button
+
+        android:text="Empezar!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/guardar"
+        android:layout_weight="0.08"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/grupobtn2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
